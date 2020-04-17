@@ -19,7 +19,7 @@ export default {
   },
 
   async mounted() {
-    this.$store.dispatch("fetchTrends");
+    // this.$store.dispatch("fetchTrends");
   }
 };
 </script>
@@ -31,5 +31,24 @@ export default {
 }
 body {
   background-color: rgb(248, 248, 248);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(187, 187, 187);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 </style>

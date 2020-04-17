@@ -1,11 +1,12 @@
 <template>
   <footer>
     <a href>
-      <img class="poweredby" src="@/assets/poweredby.svg" alt="Powered by TMdb" />
+      <img class="footerlogo" src="@/assets/footerlogo.svg" alt="Created by" />
     </a>
     <div>
       <h5 class="basics-block">THE BASICS</h5>
-      <a href="#">About</a>
+
+      <router-link to="/about">About</router-link>
       <a href="#">Contact me</a>
     </div>
     <div class="legal-block">
@@ -14,7 +15,7 @@
       <a href="#">Privacy Policy</a>
     </div>
     <a href>
-      <img class="footerlogo" src="@/assets/footerlogo.svg" alt="Created by" />
+      <img class="poweredby" src="@/assets/poweredby.svg" alt="Powered by TMdb" />
     </a>
   </footer>
 </template>
@@ -22,10 +23,10 @@
 
 <style lang="scss" scoped>
 footer {
+  // margin-top: 25px;
   background: linear-gradient(100deg, #131313 40%, #696969 95%);
   min-height: 300px;
   width: 100%;
-  margin-top: 55px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;

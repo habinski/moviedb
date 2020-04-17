@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <trends type="movie" />
+    <trends type="movie" :trendTypes="trendTypes" />
   </div>
 </template>
 
@@ -12,7 +12,13 @@ export default {
   name: "home",
   data() {
     return {
-      trends: []
+      trends: [],
+      trendTypes: [
+        { name: "popular", id: "popular" },
+        { name: "now playing", id: "now_playing" },
+        { name: "top rated", id: "top_rated" },
+        { name: "upcoming", id: "upcoming" }
+      ]
     };
   },
 
